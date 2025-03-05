@@ -1,0 +1,39 @@
+<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MaxHeight="700" MaxWidth="800"
+        Title="MainWindow" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#0026FF" Height="60" HorizontalAlignment="Stretch">
+            <Button Content="Home" Width="120" Height="40" Margin="5" Background="White" Foreground="Black" FontWeight="Bold"/>
+            <Button Content="Food" Width="120" Height="40" Margin="5" Background="White" Foreground="Black" FontWeight="Bold"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20" Background="White">
+            <TextBlock Text="Welcome to AMAP Shopping Centre" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="10,10,10,5" Foreground="Black"/>
+            <TextBlock Text="Your one-stop destination for shopping, food, entertainment, and more!" FontSize="18" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="10,0,10,10" Foreground="Black"/>
+
+            <Image Source="/Mall.jpg" MaxHeight="300" Stretch="Fill" Margin="10,0,10,15"/>
+
+            <TextBlock Text="Explore our wide range of stores, food options, and services designed to make your experience memorable." 
+                       TextWrapping="Wrap" TextAlignment="Center" Width="350" Margin="10,0,10,15" FontSize="14" Foreground="Black"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,5">
+                <Button Content="Explore More" Width="120" Height="35" Background="#0026FF" Foreground="White" FontSize="14" FontWeight="Bold" Margin="5"/>
+                <Button Content="Visit Us" Width="120" Height="35" Background="#0026FF" Foreground="White" FontSize="14" FontWeight="Bold" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
+
