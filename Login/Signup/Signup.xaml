@@ -1,0 +1,73 @@
+<Window x:Class="WpfApp1.MainWindow" <!--Change New of directory-->
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        MaxHeight="500" MaxWidth="800"
+        Title="MainWindow" Height="500" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Viewbox Stretch="UniformToFill">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Background="#0026FF" Width="300">
+                <TextBlock Text="BoardMe" Foreground="White" FontSize="25" Margin="5,5,0,0" FontWeight="SemiBold"/>
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="Already Signed up?" Foreground="White" FontSize="20" FontWeight="Bold" 
+                               HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                    <TextBlock Text="Log in to your account so you can continue building and editing your onboarding flows."
+                               Foreground="White" TextWrapping="Wrap" TextAlignment="Center" Width="250" Margin="0,0,0,15"/>
+                    <Button Content="LOG IN" Width="120" Height="40"
+                            BorderBrush="White" Foreground="White"
+                            Background="Transparent" BorderThickness="2" 
+                            FontSize="14" FontWeight="Bold"/>
+                </StackPanel>
+            </Grid>
+
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" Height="500">
+                <TextBlock Text="Sign Up for an Account" FontSize="20" FontWeight="Bold" 
+                           HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                <TextBlock Text="Let's get you all set up so you can start creating your first onboarding experience."
+                           TextWrapping="Wrap" TextAlignment="Center" Width="300" Margin="0,0,0,15"/>
+
+                <StackPanel Margin="0,0,0,5">
+                    <Label Content="First Name" Width="330" Margin="0,0,0,5" />
+                    <TextBox Width="330" Margin="0,0,0,5"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,0,5">
+                    <Label Content="Last Name" Width="330" Margin="0,0,0,5"/>
+                    <TextBox Width="330" Margin="0,0,0,5"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,0,5">
+                    <Label Content="Email" Width="330" Margin="0,0,0,5"/>
+                    <TextBox Width="330" Margin="0,0,0,5"/>
+                </StackPanel>
+
+                <StackPanel Margin="0,0,0,5">
+                    <Label Content="Password" Width="330" Margin="0,0,0,5"/>
+                    <PasswordBox Width="330" Margin="0,0,0,5"/>
+                </StackPanel>
+
+                <CheckBox Content="I accept BoardMe's Terms and Conditions" Margin="0,5,0,10" Height="18" Width="272"/>
+
+                <Button Content="SIGN UP" Width="330" Height="40" Background="#0026FF" Foreground="White"
+                        FontSize="16" FontWeight="Bold" />
+
+                <TextBlock Text="Or log in using" HorizontalAlignment="Center" Margin="10,5,10,0"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5,0,5">
+                    <Button Width="50" Height="50" Background="White" Foreground="Black" Content="G"/>
+                    <Button Width="50" Height="50" Background="White" Foreground="Black" Content="F" Margin="10,0"/>
+                    <Button Width="50" Height="50" Background="White" Foreground="Black" Content="T"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+</Window>
